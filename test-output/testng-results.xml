@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="19" passed="17" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-01T13:23:17 ICT" name="SeleniumTestsSuite" finished-at="2023-12-01T13:27:09 ICT" duration-ms="231600">
+    <groups>
+    </groups>
+    <test started-at="2023-12-01T13:23:17 ICT" name="Test1" finished-at="2023-12-01T13:26:57 ICT" duration-ms="220146">
+      <class name="Railway.test.Exercise">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:23:17 ICT" name="startBrowser" finished-at="2023-12-01T13:23:30 ICT" duration-ms="12921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="TC01(java.lang.String,java.lang.String)[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:23:30 ICT" name="TC01" data-provider="TC01" finished-at="2023-12-01T13:23:33 ICT" duration-ms="2596" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:23:33 ICT" name="quitBrowser" finished-at="2023-12-01T13:23:33 ICT" duration-ms="388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:23:33 ICT" name="startBrowser" finished-at="2023-12-01T13:23:38 ICT" duration-ms="4562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="TC02(java.lang.String,java.lang.String)[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:23:38 ICT" name="TC02" data-provider="TC02" finished-at="2023-12-01T13:23:40 ICT" duration-ms="1768" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:23:40 ICT" name="quitBrowser" finished-at="2023-12-01T13:23:40 ICT" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:23:40 ICT" name="startBrowser" finished-at="2023-12-01T13:23:43 ICT" duration-ms="3333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="TC03(java.lang.String,java.lang.String)[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:23:43 ICT" name="TC03" data-provider="TC03" finished-at="2023-12-01T13:23:46 ICT" duration-ms="3106" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The message is: 'Invalid username or password. Please try again.' expected [There was a problem with your login and/or errors exist in your form.] but found [Invalid username or password. Please try again.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The message is: 'Invalid username or password. Please try again.' expected [There was a problem with your login and/or errors exist in your form.] but found [Invalid username or password. Please try again.]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at Railway.pages.loginPage.actCheckMessage(loginPage.java:47)
+at Railway.test.Exercise.TC03(Exercise.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:23:46 ICT" name="quitBrowser" finished-at="2023-12-01T13:23:47 ICT" duration-ms="505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:23:47 ICT" name="startBrowser" finished-at="2023-12-01T13:23:52 ICT" duration-ms="4892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="TC05(java.lang.String,java.lang.String)[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:23:52 ICT" name="TC05" data-provider="TC05" finished-at="2023-12-01T13:23:54 ICT" duration-ms="1882" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test2@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC05 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:23:54 ICT" name="quitBrowser" finished-at="2023-12-01T13:23:54 ICT" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:23:54 ICT" name="startBrowser" finished-at="2023-12-01T13:23:58 ICT" duration-ms="4309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="TC06(java.lang.String,java.lang.String)[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:23:58 ICT" name="TC06" data-provider="TC01" finished-at="2023-12-01T13:24:02 ICT" duration-ms="4203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC06 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:24:02 ICT" name="quitBrowser" finished-at="2023-12-01T13:24:03 ICT" duration-ms="426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:24:03 ICT" name="startBrowser" finished-at="2023-12-01T13:24:07 ICT" duration-ms="4205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="TC07(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:24:07 ICT" name="TC07" data-provider="TC07" finished-at="2023-12-01T13:24:09 ICT" duration-ms="2192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC07 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:24:09 ICT" name="quitBrowser" finished-at="2023-12-01T13:24:10 ICT" duration-ms="323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:24:10 ICT" name="startBrowser" finished-at="2023-12-01T13:24:13 ICT" duration-ms="3186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="TC08(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:24:13 ICT" name="TC08" data-provider="TC08" finished-at="2023-12-01T13:24:16 ICT" duration-ms="3195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC08 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:24:16 ICT" name="quitBrowser" finished-at="2023-12-01T13:24:16 ICT" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:24:16 ICT" name="startBrowser" finished-at="2023-12-01T13:24:21 ICT" duration-ms="4378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="TC09(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:24:21 ICT" name="TC09" data-provider="TC09" finished-at="2023-12-01T13:24:49 ICT" duration-ms="28818" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test33]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC09 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:24:49 ICT" name="quitBrowser" finished-at="2023-12-01T13:24:50 ICT" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:24:50 ICT" name="startBrowser" finished-at="2023-12-01T13:24:53 ICT" duration-ms="3040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="TC10(java.lang.String,java.lang.String)[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:24:53 ICT" name="TC10" data-provider="TC10" finished-at="2023-12-01T13:25:46 ICT" duration-ms="53274" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //p[@class='message error'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\phung.bui\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51824/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 638b7cb49e07468100939f5e51b774d6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[@class='message error'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\phung.bui\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51824/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 638b7cb49e07468100939f5e51b774d6
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at Railway.pages.loginPage.actCheckMessage(loginPage.java:43)
+at Railway.test.Exercise.TC10(Exercise.java:240)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC10 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:25:46 ICT" name="quitBrowser" finished-at="2023-12-01T13:25:47 ICT" duration-ms="515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:25:47 ICT" name="startBrowser" finished-at="2023-12-01T13:25:50 ICT" duration-ms="3279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="TC11(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:25:50 ICT" name="TC11" data-provider="TC11" finished-at="2023-12-01T13:26:05 ICT" duration-ms="15078" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC11 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:26:05 ICT" name="quitBrowser" finished-at="2023-12-01T13:26:05 ICT" duration-ms="356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:26:05 ICT" name="startBrowser" finished-at="2023-12-01T13:26:11 ICT" duration-ms="5655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="TC12(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:26:11 ICT" name="TC12" data-provider="TC12" finished-at="2023-12-01T13:26:17 ICT" duration-ms="5653" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test100@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12/13/2023]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Nha Trang]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Huế]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Soft bed with air conditioner]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC12 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:26:17 ICT" name="quitBrowser" finished-at="2023-12-01T13:26:17 ICT" duration-ms="354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:26:17 ICT" name="startBrowser" finished-at="2023-12-01T13:26:21 ICT" duration-ms="4254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="TC13(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:26:21 ICT" name="TC13" data-provider="TC13" finished-at="2023-12-01T13:26:27 ICT" duration-ms="5160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test32@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12/26/2023]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Nha Trang]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Sài Gòn]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Soft bed with air conditioner]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC13 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:26:27 ICT" name="quitBrowser" finished-at="2023-12-01T13:26:27 ICT" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:26:27 ICT" name="startBrowser" finished-at="2023-12-01T13:26:31 ICT" duration-ms="4325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="TC14(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:26:31 ICT" name="TC14" data-provider="TC14" finished-at="2023-12-01T13:26:35 ICT" duration-ms="4114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test100@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Đà Nẵng]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Sài Gòn]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC14 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:26:35 ICT" name="quitBrowser" finished-at="2023-12-01T13:26:36 ICT" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:26:36 ICT" name="startBrowser" finished-at="2023-12-01T13:26:40 ICT" duration-ms="4504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="TC15(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:26:40 ICT" name="TC15" data-provider="TC15" finished-at="2023-12-01T13:26:45 ICT" duration-ms="5312" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test100@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Quảng Ngãi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Huế]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC15 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:26:45 ICT" name="quitBrowser" finished-at="2023-12-01T13:26:46 ICT" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:26:46 ICT" name="startBrowser" finished-at="2023-12-01T13:26:50 ICT" duration-ms="4375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="TC16(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:26:50 ICT" name="TC16" data-provider="TC16" finished-at="2023-12-01T13:26:57 ICT" duration-ms="6910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test3@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12/16/2023]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Quảng Ngãi]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Sài Gòn]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Soft bed with air conditioner]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC16 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Railway.test.Exercise@7c729a55]" started-at="2023-12-01T13:26:57 ICT" name="quitBrowser" finished-at="2023-12-01T13:26:57 ICT" duration-ms="341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- Railway.test.Exercise -->
+    </test> <!-- Test1 -->
+    <test started-at="2023-12-01T13:26:57 ICT" name="Test2" finished-at="2023-12-01T13:27:09 ICT" duration-ms="11307">
+      <class name="Railway.test.TC04">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:Railway.test.TC04@689604d9]" started-at="2023-12-01T13:26:57 ICT" name="startBrowser" finished-at="2023-12-01T13:27:02 ICT" duration-ms="4310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="enter(java.lang.String,java.lang.String)[pri:0, instance:Railway.test.TC04@689604d9]" started-at="2023-12-01T13:27:02 ICT" name="enter" data-provider="TC04" finished-at="2023-12-01T13:27:04 ICT" duration-ms="1906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456781]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enter -->
+        <test-method signature="enter(java.lang.String,java.lang.String)[pri:0, instance:Railway.test.TC04@689604d9]" started-at="2023-12-01T13:27:04 ICT" name="enter" data-provider="TC04" finished-at="2023-12-01T13:27:05 ICT" duration-ms="1642" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456782]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enter -->
+        <test-method signature="enter(java.lang.String,java.lang.String)[pri:0, instance:Railway.test.TC04@689604d9]" started-at="2023-12-01T13:27:05 ICT" name="enter" data-provider="TC04" finished-at="2023-12-01T13:27:07 ICT" duration-ms="1607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456783]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enter -->
+        <test-method signature="enter(java.lang.String,java.lang.String)[pri:0, instance:Railway.test.TC04@689604d9]" started-at="2023-12-01T13:27:07 ICT" name="enter" data-provider="TC04" finished-at="2023-12-01T13:27:08 ICT" duration-ms="1504" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@grr.la]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456784]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enter -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Railway.test.TC04@689604d9]" started-at="2023-12-01T13:27:08 ICT" name="quitBrowser" finished-at="2023-12-01T13:27:09 ICT" duration-ms="328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- Railway.test.TC04 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- SeleniumTestsSuite -->
+</testng-results>

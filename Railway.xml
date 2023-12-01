@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SeleniumTestsSuite">
+    <test name="Test1">
+        <classes>
+            <class name="railway.test.Exercise" />
+        </classes>
+    </test>
+    <test name="Test2">
+        <classes>
+            <class name="railway.test.TC04" />
+        </classes>
+    </test>
+</suite>

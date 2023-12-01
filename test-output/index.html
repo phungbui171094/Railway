@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-SeleniumTestsSuite" class="navigator-link">
+              <span class="suite-name border-failed">SeleniumTestsSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-SeleniumTestsSuite" class="navigator-link ">
+                    <span>C:\Users\phung.bui\eclipse-workspace\testng\Railway.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-SeleniumTestsSuite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-SeleniumTestsSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-SeleniumTestsSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-SeleniumTestsSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-SeleniumTestsSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-SeleniumTestsSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">19 methods, 2 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SeleniumTestsSuite" class="hide-methods failed suite-SeleniumTestsSuite"> (hide)</a> <!-- hide-methods failed suite-SeleniumTestsSuite -->
+                      <a href="#" panel-name="suite-SeleniumTestsSuite" class="show-methods failed suite-SeleniumTestsSuite"> (show)</a> <!-- show-methods failed suite-SeleniumTestsSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-SeleniumTestsSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.Exercise" class="method navigator-link" hash-for-method="TC03(test1@grr.la, 123456789)">TC03(test1@grr.la, 123456789)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.Exercise" class="method navigator-link" hash-for-method="TC10(test1, 12345678)">TC10(test1, 12345678)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SeleniumTestsSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SeleniumTestsSuite" class="hide-methods passed suite-SeleniumTestsSuite"> (hide)</a> <!-- hide-methods passed suite-SeleniumTestsSuite -->
+                      <a href="#" panel-name="suite-SeleniumTestsSuite" class="show-methods passed suite-SeleniumTestsSuite"> (show)</a> <!-- show-methods passed suite-SeleniumTestsSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-SeleniumTestsSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.Exercise" class="method navigator-link" hash-for-method="TC01(test1@grr.la, 12345678)">TC01(test1@grr.la, 12345678)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.Exercise" class="method navigator-link" hash-for-method="TC02(, 12345678)">TC02(, 12345678)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.Exercise" class="method navigator-link" hash-for-method="TC05(test2@grr.la, 12345678)">TC05(test2@grr.la, 12345678)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.Exercise" class="method navigator-link" hash-for-method="TC06(test1@grr.la, 12345678)">TC06(test1@grr.la, 12345678)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.Exercise" class="method navigator-link" hash-for-method="TC07(test1@grr.la, 12345678, 12345678, 123456789)">TC07(test1@grr.la, 12345678, 12345678, 123456789)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.Exercise" class="method navigator-link" hash-for-method="TC08(test1@grr.la, , , )">TC08(test1@grr.la, , , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.Exercise" class="method navigator-link" hash-for-method="TC09(test33, 12345678, 12345678, 12345678)">TC09(test33, 12345678, 12345678, 12345678)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.Exercise" class="method navigator-link" hash-for-method="TC11(test1, 12345678, 123456789)">TC11(test1, 12345678, 123456789)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.Exercise" class="method navigator-link" hash-for-method="TC12(test100@grr.la, 12345678, 12/13/2023, Nha Trang, Huế, Soft bed with air conditioner, 1)">TC12(test100@grr.la, 12345678, 12/13/2023, Nha Trang, Huế, Soft bed with air conditioner, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.Exercise" class="method navigator-link" hash-for-method="TC13(test32@grr.la, 12345678, 12/26/2023, Nha Trang, Sài Gòn, Soft bed with air conditioner, 5)">TC13(test32@grr.la, 12345678, 12/26/2023, Nha Trang, Sài Gòn, Soft bed with air conditioner, 5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.Exercise" class="method navigator-link" hash-for-method="TC14(test100@grr.la, 12345678, Đà Nẵng, Sài Gòn)">TC14(test100@grr.la, 12345678, Đà Nẵng, Sài Gòn)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.Exercise" class="method navigator-link" hash-for-method="TC15(test100@grr.la, 12345678, Quảng Ngãi, Huế)">TC15(test100@grr.la, 12345678, Quảng Ngãi, Huế)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.Exercise" class="method navigator-link" hash-for-method="TC16(test3@grr.la, 12345678, 12/16/2023, Quảng Ngãi, Sài Gòn, Soft bed with air conditioner, 1)">TC16(test3@grr.la, 12345678, 12/16/2023, Quảng Ngãi, Sài Gòn, Soft bed with air conditioner, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.TC04" class="method navigator-link" hash-for-method="enter(test1@grr.la, 123456781)">enter(test1@grr.la, 123456781)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.TC04" class="method navigator-link" hash-for-method="enter(test1@grr.la, 123456784)">enter(test1@grr.la, 123456784)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.TC04" class="method navigator-link" hash-for-method="enter(test1@grr.la, 123456783)">enter(test1@grr.la, 123456783)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumTestsSuite" title="Railway.test.TC04" class="method navigator-link" hash-for-method="enter(test1@grr.la, 123456782)">enter(test1@grr.la, 123456782)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SeleniumTestsSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SeleniumTestsSuite" class="panel SeleniumTestsSuite">
+          <div class="suite-SeleniumTestsSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Railway.test.Exercise</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC03(test1@grr.la, 123456789)">
+                  </a> <!-- TC03(test1@grr.la, 123456789) -->
+                  <span class="method-name">TC03</span>
+                  <span class="parameters">(test1@grr.la, 123456789)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The message is: &apos;Invalid username or password. Please try again.&apos; expected [There was a problem with your login and/or errors exist in your form.] but found [Invalid username or password. Please try again.]
+	at Railway.pages.loginPage.actCheckMessage(loginPage.java:47)
+	at Railway.test.Exercise.TC03(Exercise.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC10(test1, 12345678)">
+                  </a> <!-- TC10(test1, 12345678) -->
+                  <span class="method-name">TC10</span>
+                  <span class="parameters">(test1, 12345678)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[@class=&apos;message error&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\phung.bui\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51824/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 638b7cb49e07468100939f5e51b774d6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at Railway.pages.loginPage.actCheckMessage(loginPage.java:43)
+	at Railway.test.Exercise.TC10(Exercise.java:240)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SeleniumTestsSuite-class-failed -->
+          <div class="suite-SeleniumTestsSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Railway.test.Exercise</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC01(test1@grr.la, 12345678)">
+                  </a> <!-- TC01(test1@grr.la, 12345678) -->
+                  <span class="method-name">TC01</span>
+                  <span class="parameters">(test1@grr.la, 12345678)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC02(, 12345678)">
+                  </a> <!-- TC02(, 12345678) -->
+                  <span class="method-name">TC02</span>
+                  <span class="parameters">(, 12345678)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC05(test2@grr.la, 12345678)">
+                  </a> <!-- TC05(test2@grr.la, 12345678) -->
+                  <span class="method-name">TC05</span>
+                  <span class="parameters">(test2@grr.la, 12345678)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC06(test1@grr.la, 12345678)">
+                  </a> <!-- TC06(test1@grr.la, 12345678) -->
+                  <span class="method-name">TC06</span>
+                  <span class="parameters">(test1@grr.la, 12345678)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC07(test1@grr.la, 12345678, 12345678, 123456789)">
+                  </a> <!-- TC07(test1@grr.la, 12345678, 12345678, 123456789) -->
+                  <span class="method-name">TC07</span>
+                  <span class="parameters">(test1@grr.la, 12345678, 12345678, 123456789)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC08(test1@grr.la, , , )">
+                  </a> <!-- TC08(test1@grr.la, , , ) -->
+                  <span class="method-name">TC08</span>
+                  <span class="parameters">(test1@grr.la, , , )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC09(test33, 12345678, 12345678, 12345678)">
+                  </a> <!-- TC09(test33, 12345678, 12345678, 12345678) -->
+                  <span class="method-name">TC09</span>
+                  <span class="parameters">(test33, 12345678, 12345678, 12345678)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC11(test1, 12345678, 123456789)">
+                  </a> <!-- TC11(test1, 12345678, 123456789) -->
+                  <span class="method-name">TC11</span>
+                  <span class="parameters">(test1, 12345678, 123456789)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC12(test100@grr.la, 12345678, 12/13/2023, Nha Trang, Huế, Soft bed with air conditioner, 1)">
+                  </a> <!-- TC12(test100@grr.la, 12345678, 12/13/2023, Nha Trang, Huế, Soft bed with air conditioner, 1) -->
+                  <span class="method-name">TC12</span>
+                  <span class="parameters">(test100@grr.la, 12345678, 12/13/2023, Nha Trang, Huế, Soft bed with air conditioner, 1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC13(test32@grr.la, 12345678, 12/26/2023, Nha Trang, Sài Gòn, Soft bed with air conditioner, 5)">
+                  </a> <!-- TC13(test32@grr.la, 12345678, 12/26/2023, Nha Trang, Sài Gòn, Soft bed with air conditioner, 5) -->
+                  <span class="method-name">TC13</span>
+                  <span class="parameters">(test32@grr.la, 12345678, 12/26/2023, Nha Trang, Sài Gòn, Soft bed with air conditioner, 5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC14(test100@grr.la, 12345678, Đà Nẵng, Sài Gòn)">
+                  </a> <!-- TC14(test100@grr.la, 12345678, Đà Nẵng, Sài Gòn) -->
+                  <span class="method-name">TC14</span>
+                  <span class="parameters">(test100@grr.la, 12345678, Đà Nẵng, Sài Gòn)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC15(test100@grr.la, 12345678, Quảng Ngãi, Huế)">
+                  </a> <!-- TC15(test100@grr.la, 12345678, Quảng Ngãi, Huế) -->
+                  <span class="method-name">TC15</span>
+                  <span class="parameters">(test100@grr.la, 12345678, Quảng Ngãi, Huế)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC16(test3@grr.la, 12345678, 12/16/2023, Quảng Ngãi, Sài Gòn, Soft bed with air conditioner, 1)">
+                  </a> <!-- TC16(test3@grr.la, 12345678, 12/16/2023, Quảng Ngãi, Sài Gòn, Soft bed with air conditioner, 1) -->
+                  <span class="method-name">TC16</span>
+                  <span class="parameters">(test3@grr.la, 12345678, 12/16/2023, Quảng Ngãi, Sài Gòn, Soft bed with air conditioner, 1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SeleniumTestsSuite-class-passed -->
+          <div class="suite-SeleniumTestsSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Railway.test.TC04</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enter(test1@grr.la, 123456781)">
+                  </a> <!-- enter(test1@grr.la, 123456781) -->
+                  <span class="method-name">enter</span>
+                  <span class="parameters">(test1@grr.la, 123456781)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enter(test1@grr.la, 123456784)">
+                  </a> <!-- enter(test1@grr.la, 123456784) -->
+                  <span class="method-name">enter</span>
+                  <span class="parameters">(test1@grr.la, 123456784)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enter(test1@grr.la, 123456783)">
+                  </a> <!-- enter(test1@grr.la, 123456783) -->
+                  <span class="method-name">enter</span>
+                  <span class="parameters">(test1@grr.la, 123456783)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enter(test1@grr.la, 123456782)">
+                  </a> <!-- enter(test1@grr.la, 123456782) -->
+                  <span class="method-name">enter</span>
+                  <span class="parameters">(test1@grr.la, 123456782)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SeleniumTestsSuite-class-passed -->
+        </div> <!-- panel SeleniumTestsSuite -->
+        <div panel-name="test-xml-SeleniumTestsSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\phung.bui\eclipse-workspace\testng\Railway.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;SeleniumTestsSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Railway.test.Exercise&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Railway.test.TC04&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
+&lt;/suite&gt; &lt;!-- SeleniumTestsSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SeleniumTestsSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SeleniumTestsSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test2 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SeleniumTestsSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SeleniumTestsSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SeleniumTestsSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SeleniumTestsSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SeleniumTestsSuite');
+function tableData_SeleniumTestsSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(19);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC10')
+data.setCell(0, 2, 'Railway.test.Exercise')
+data.setCell(0, 3, 53274);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC09')
+data.setCell(1, 2, 'Railway.test.Exercise')
+data.setCell(1, 3, 28818);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC11')
+data.setCell(2, 2, 'Railway.test.Exercise')
+data.setCell(2, 3, 15078);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC16')
+data.setCell(3, 2, 'Railway.test.Exercise')
+data.setCell(3, 3, 6910);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC12')
+data.setCell(4, 2, 'Railway.test.Exercise')
+data.setCell(4, 3, 5653);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC15')
+data.setCell(5, 2, 'Railway.test.Exercise')
+data.setCell(5, 3, 5312);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC13')
+data.setCell(6, 2, 'Railway.test.Exercise')
+data.setCell(6, 3, 5160);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC06')
+data.setCell(7, 2, 'Railway.test.Exercise')
+data.setCell(7, 3, 4203);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC14')
+data.setCell(8, 2, 'Railway.test.Exercise')
+data.setCell(8, 3, 4114);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC08')
+data.setCell(9, 2, 'Railway.test.Exercise')
+data.setCell(9, 3, 3195);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TC03')
+data.setCell(10, 2, 'Railway.test.Exercise')
+data.setCell(10, 3, 3106);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TC01')
+data.setCell(11, 2, 'Railway.test.Exercise')
+data.setCell(11, 3, 2596);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TC07')
+data.setCell(12, 2, 'Railway.test.Exercise')
+data.setCell(12, 3, 2192);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'enter')
+data.setCell(13, 2, 'Railway.test.TC04')
+data.setCell(13, 3, 1906);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TC05')
+data.setCell(14, 2, 'Railway.test.Exercise')
+data.setCell(14, 3, 1882);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TC02')
+data.setCell(15, 2, 'Railway.test.Exercise')
+data.setCell(15, 3, 1768);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'enter')
+data.setCell(16, 2, 'Railway.test.TC04')
+data.setCell(16, 3, 1642);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'enter')
+data.setCell(17, 2, 'Railway.test.TC04')
+data.setCell(17, 3, 1607);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'enter')
+data.setCell(18, 2, 'Railway.test.TC04')
+data.setCell(18, 3, 1504);
+window.suiteTableData['SeleniumTestsSuite']= { tableData: data, tableDiv: 'times-div-SeleniumTestsSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-SeleniumTestsSuite">
+              </div> <!-- times-div-SeleniumTestsSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SeleniumTestsSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SeleniumTestsSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SeleniumTestsSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SeleniumTestsSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Railway.test.Exercise</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC01(test1@grr.la, 12345678)</span>
+                <span class="method-start">12922 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">15521 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">15911 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC02(, 12345678)</span>
+                <span class="method-start">20473 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">22243 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">22558 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC03(test1@grr.la, 123456789)</span>
+                <span class="method-start">25891 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">29015 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">29521 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC05(test2@grr.la, 12345678)</span>
+                <span class="method-start">34414 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">36298 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">36635 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC06(test1@grr.la, 12345678)</span>
+                <span class="method-start">40944 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">45149 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">45576 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC07(test1@grr.la, 12345678, 12345678, 123456789)</span>
+                <span class="method-start">49781 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">51975 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">52300 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC08(test1@grr.la, , , )</span>
+                <span class="method-start">55487 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">58684 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">58973 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC09(test33, 12345678, 12345678, 12345678)</span>
+                <span class="method-start">63351 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">92170 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">92585 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC10(test1, 12345678)</span>
+                <span class="method-start">95627 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">148909 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">149425 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC11(test1, 12345678, 123456789)</span>
+                <span class="method-start">152705 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">167785 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">168171 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC12(test100@grr.la, 12345678, 12/13/2023, Nha Trang, Huế, Soft bed with air conditioner, 1)</span>
+                <span class="method-start">173826 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">179483 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">179838 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC13(test32@grr.la, 12345678, 12/26/2023, Nha Trang, Sài Gòn, Soft bed with air conditioner, 5)</span>
+                <span class="method-start">184092 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">189254 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">189568 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC14(test100@grr.la, 12345678, Đà Nẵng, Sài Gòn)</span>
+                <span class="method-start">193894 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">198009 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">198330 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC15(test100@grr.la, 12345678, Quảng Ngãi, Huế)</span>
+                <span class="method-start">202834 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">208148 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">208457 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC16(test3@grr.la, 12345678, 12/16/2023, Quảng Ngãi, Sài Gòn, Soft bed with air conditioner, 1)</span>
+                <span class="method-start">212832 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">219744 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Railway.test.TC04</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">220235 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">enter(test1@grr.la, 123456781)</span>
+                <span class="method-start">224547 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enter(test1@grr.la, 123456782)</span>
+                <span class="method-start">226455 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enter(test1@grr.la, 123456783)</span>
+                <span class="method-start">228098 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enter(test1@grr.la, 123456784)</span>
+                <span class="method-start">229707 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">231213 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
